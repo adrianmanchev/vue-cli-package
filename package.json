@@ -1,0 +1,34 @@
+{
+  "name": "vue-cli-package",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve:app": "NODE_ENV=development vue-cli-service serve src/app/main.js --port 9099 --mode app",
+    "build:app": "NODE_ENV=production vue-cli-service build --dest dist/app src/app/main.js --mode app",
+    "serve:www": "NODE_ENV=development vue-cli-service serve src/www/main.js --port 9098 --mode www",
+    "build:www": "NODE_ENV=production vue-cli-service build src/www/main.js --dest dist/www --mode www",
+    "serve:metro": "NODE_ENV=development vue-cli-service serve src/metro/main.js --port 9097 --mode metro",
+    "build:metro": "NODE_ENV=production vue-cli-service build --dest dist/metro src/metro/main.js --mode metro",
+    "serve:dev": "NODE_ENV=development vue-cli-service serve src/dev/main.js --port 9096 --mode dev",
+    "build:dev": "NODE_ENV=production vue-cli-service build src/dev/main.js --dest dist/dev --mode dev",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    ...
+  },
+  "devDependencies": {
+    ...
+  },
+  "eslintConfig": {
+    ...
+  },
+  "postcss": {
+    ...
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
